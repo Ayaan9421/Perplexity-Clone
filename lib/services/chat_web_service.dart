@@ -37,12 +37,6 @@ class ChatWebService {
   }
 
   String getBaseUrl() {
-    if (kIsWeb) {
-      return 'ws://localhost:8000'; // Web
-    } else if (Platform.isAndroid) {
-      return 'ws://10.0.2.2:8000'; // Android Emulator
-    } else {
-      return 'ws://localhost:8000'; // iOS, Windows, macOS
-    }
+    return 'wss://perplexity-clone-1.onrender.com';
   }
 }
